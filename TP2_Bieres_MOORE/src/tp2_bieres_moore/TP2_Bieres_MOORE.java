@@ -15,6 +15,22 @@ public class TP2_Bieres_MOORE {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        BouteilleBiere uneBiere = new BouteilleBiere("Cuvée des trolls",7.0 ,"Dubuisson") ;
+        uneBiere.lireEtiquette();
+        uneBiere.Décapsuler();
+        System.out.println(uneBiere);
+        
+        BouteilleBiere autreBiere = new BouteilleBiere("Leffe", 6.6 ,"Abbaye de Leffe") ;
+        autreBiere.lireEtiquette();
+        uneBiere.Décapsuler();
+        System.out.println(autreBiere) ;
+        
+        BouteilleBiere biereForte = new BouteilleBiere("Maximator", 12.0 ,"Usine chimique") ;
+        biereForte.lireEtiquette();
+        biereForte.Décapsuler();
+        System.out.println(biereForte) ;
+        biereForte.Décapsuler();
     }
     
 }
