@@ -29,19 +29,19 @@ public class TP2_convertisseurObjet_MOORE {
         //menu de conversions pour un utilisateur
         
         Convertisseur MenuConversions = new Convertisseur();
-        Scanner sc = new Scanner(System.in);
-        double valeurSortie;
+        Scanner sc = new Scanner(System.in);                // déclaration du scanner 
+        double valeurSortie;                                        // déclaration de la variable qui renverra la valeur de sortie
         
         System.out.println("Quelle est la valeur de la température que vous voulez convertir? ");
-        double valeurEntrée = sc.nextDouble();
+        double valeurEntrée = sc.nextDouble();          // demande à l'utilisateur sa valeur à convertir (double)
         
         System.out.println("Quelle conversions voulez vous effetuer ? ");
         System.out.println(" (1) Celcius Vers Kelvin \n (2) Kelvin Vers Celcius \n "
             +"(3) Farenheit Vers Celcius \n (4) Celcius Vers Farenheit \n "
             +"(5) Farenheit Vers Kelvin \n (6) Kelvin Vers Farenheit ");
-        int conversionChoisie = sc.nextInt();
+        int conversionChoisie = sc.nextInt();                       // la conversion choisie
         
-        if (conversionChoisie == 1) {
+        if (conversionChoisie == 1) {                               // converti avec la méthode correspondante à la conversion choisie 
             valeurSortie = MenuConversions.CelciusVersKelvin(valeurEntrée);
             System.out.println("voici le résultat de votre conversion: "+valeurSortie + "K");
         }
