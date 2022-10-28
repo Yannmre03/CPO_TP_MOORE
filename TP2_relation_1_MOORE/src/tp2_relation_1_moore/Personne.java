@@ -11,7 +11,7 @@ package tp2_relation_1_moore;
 public class Personne {
     String nom, prenom;
     int nbVoitures;
-    Voiture [] liste_voitures;
+    Voiture [] liste_voitures;      // creer tableau connecté à la classe Voiture
     
     public Personne (String unPrenom, String unNom) {       // constructeur
     nom = unNom;
