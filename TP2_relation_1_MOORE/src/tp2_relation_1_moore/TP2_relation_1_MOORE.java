@@ -20,7 +20,7 @@ public class TP2_relation_1_MOORE {
         Voiture une2008 = new Voiture ("2008", "Peugeot", 6 ) ;
         Voiture uneMicra = new Voiture ("Micra", "Nissan", 4 ) ;
         Voiture une206 = new Voiture ("206", "Peugeot", 4 ) ;
-        
+        Voiture une308 = new Voiture ("308", "Peugeot", 6 ) ;
         Personne Bob = new Personne("Bobby", "Sixkiller");      // ajout manuel de personnes
         Personne Reno = new Personne("Reno", "Raines");
         
@@ -43,9 +43,10 @@ public class TP2_relation_1_MOORE {
         
         System.out.println("la premiere voiture de Bob est " +
         Bob.liste_voitures[0]) ;       //tester le fonctionnement 
-        System.out.println( " \n\npropriétaire de la 2008: " + une2008.Proprietaire.nom + "\n");
-        System.out.println(Bob.ajouter_voiture(une206));
-        System.out.println(Bob.ajouter_voiture(une2008));
+        
+        System.out.println(Bob.ajouter_voiture(une206));        // on a bien la valeur true car une206 n'a pas de proprio
+        System.out.println(Bob.ajouter_voiture(uneMicra));       // uneMicra appartient déja à Reno donc false
+        System.out.println(Bob.ajouter_voiture(une308));        // Bob a déjà 3 voitures donc false
         }
     
 }
