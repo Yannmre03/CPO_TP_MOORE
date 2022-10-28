@@ -11,9 +11,9 @@ package tp2_relation_1_moore;
 public class Voiture {
     String Modele, Marque;
     int puissanceCV;
-    Personne Proprietaire ;
+    Personne Proprietaire ;     // créer une varaible proprétaire connecté avec la classe Personne 
     
-    public Voiture (String unModele, String uneMarque, int puissance) {
+    public Voiture (String unModele, String uneMarque, int puissance) {     // constrcteur 
         Marque = uneMarque;
         Modele = unModele;
         puissanceCV = puissance;
@@ -21,14 +21,7 @@ public class Voiture {
     }
     
     @Override
-    public String toString () {
-        return "caractéristiques de la voiture: " + Marque + ", " + Modele + ", " + puissanceCV + "\n";
-    }
-    
-    public String Voiture(String unModele, String uneMarque, int puissance ) {
-        Marque = uneMarque;
-        Modele = unModele;
-        puissanceCV = puissance;
-        return Marque + Modele + puissanceCV;
+    public String toString () {         // méthode string pour l'affichage 
+        return Modele;
     }
 }
