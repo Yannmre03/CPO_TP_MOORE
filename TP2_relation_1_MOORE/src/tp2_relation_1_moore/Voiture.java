@@ -22,6 +22,6 @@ public class Voiture {
     
     @Override
     public String toString () {         // méthode string pour l'affichage 
-        return Modele;
+        return Modele + " " + Marque + " " + puissanceCV;
     }
 }
