@@ -24,8 +24,8 @@ public class TP2_relation_1_MOORE {
         Personne Bob = new Personne("Bobby", "Sixkiller");      // ajout manuel de personnes
         Personne Reno = new Personne("Reno", "Raines");
         
-        //System.out.println("liste des voitures disponibles: \n "+ uneClio +
-        //"\n" + uneAutreClio + "\n" + une2008 + "\n" + uneMicra ) ;      // affiche les voitures disponibles
+        System.out.println("liste des voitures disponibles: \n "+ uneClio +
+        "\n" + uneAutreClio + "\n" + une2008 + "\n" + uneMicra ) ;      // affiche les voitures disponibles
         
         Bob.liste_voitures[Bob.nbVoitures] = uneClio ;       //assigne une voiture à Bob
         Bob.nbVoitures += 1 ;                    
@@ -41,11 +41,11 @@ public class TP2_relation_1_MOORE {
         Reno.nbVoitures += 1 ;                    
         une2008.Proprietaire = Reno ;
         
-        //System.out.println("la premiere voiture de Bob est " +
-        //Bob.liste_voitures[0]) ;       //tester le fonctionnement 
-        //System.out.println( " \n\npropriétaire de la 2008: " + une2008.Proprietaire.nom + "\n");
-        //This = Bob
-        Bob.ajouter_voiture(uneClio);
+        System.out.println("la premiere voiture de Bob est " +
+        Bob.liste_voitures[0]) ;       //tester le fonctionnement 
+        System.out.println( " \n\npropriétaire de la 2008: " + une2008.Proprietaire.nom + "\n");
+        System.out.println(Bob.ajouter_voiture(une206));
+        System.out.println(Bob.ajouter_voiture(une2008));
         }
     
 }
