@@ -14,5 +14,8 @@ public class Tartiflette {
     public Tartiflette ( int caloriesInit) {        // constructeurqui initalise nbCalories
         nbCalories = caloriesInit;
     }
-    
+    public int modifier_calories (int desCalories) {
+        nbCalories = desCalories;
+        return nbCalories;
+    }
 }
