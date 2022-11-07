@@ -8,13 +8,4 @@ package premiereinterfacegraphique_moore;
  *
  * @author Administrateur
  */
-public class PremiereInterfaceGraphique_MOORE {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
-    
-}
