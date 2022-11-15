@@ -4,6 +4,9 @@
  */
 package tp3_moore;
 
+import Armes.bâton;
+import Armes.Arme;
+import Armes.Epee;
 import java.util.Vector;
 
 /**
