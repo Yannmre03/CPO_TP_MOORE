@@ -4,6 +4,9 @@
  */
 package tp3_moore;
 
+import Personnages.Magicien;
+import Personnages.Guerrier;
+import Personnages.Personnage;
 import Armes.bâton;
 import Armes.Arme;
 import Armes.Epee;
@@ -32,6 +35,19 @@ public class TP3_MOORE {
         tabArmes.add(bat2);
         for (int i =0; i < tabArmes.size(); i++ ){
             System.out.println(tabArmes.elementAt(i));
+        }
+        
+        Personnage Magicien1 = new Magicien("Gandalf",65, true);
+        Personnage Magicien2 = new Magicien("Garcimore",44,false);
+        Personnage Guerrier1 = new Guerrier("Conan", 78, false);
+        Personnage Guerrier2 = new Guerrier("Lannister", 45, true);
+        Vector tabPerso = new Vector();
+        tabPerso.add(Magicien1);
+        tabPerso.add(Magicien2);
+        tabPerso.add(Guerrier1);
+        tabPerso.add(Guerrier2);
+        for (int i =0; i < tabPerso.size(); i++ ){
+            System.out.println(tabPerso.elementAt(i));
         }
         
     }

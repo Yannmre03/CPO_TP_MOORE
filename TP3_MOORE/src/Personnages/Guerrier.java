@@ -2,22 +2,21 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package tp3_moore;
+package Personnages;
 
 /**
  *
  * @author Administrateur
  */
-public class Magicien extends Personnage {
-    private boolean confirmé;
+public class Guerrier extends Personnage{
+    private boolean cheval;
     
-    public Magicien(String nom, int niveauDeVie, boolean confirmé){
+    public Guerrier(String nom, int niveauDeVie, boolean cheval){
         this.nom = nom;
         this.niveauDeVie = niveauDeVie;
-        this.confirmé = confirmé;
+        this.cheval = cheval;
     }
-    
-    public void setCheval(boolean confirmé){
-        this.confirmé = confirmé;
+    public void setCheval(boolean cheval){
+        this.cheval = cheval;
     }
 }
