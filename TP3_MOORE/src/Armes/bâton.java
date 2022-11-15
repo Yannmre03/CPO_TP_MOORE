@@ -10,9 +10,11 @@ package Armes;
  */
 public class bâton extends Arme {
     int âge;
+    
     public bâton(String nom, int niveauAttaque, int âge) {
         this.nom = nom;
-        this.âge = âge;
         this.niveauAttaque = niveauAttaque;
+        this.âge = âge;
+        
     }
 }
