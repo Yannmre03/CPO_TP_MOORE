@@ -4,6 +4,8 @@
  */
 package tp3_moore;
 
+import java.util.Vector;
+
 /**
  *
  * @author Administrateur
@@ -20,7 +22,14 @@ public class TP3_MOORE {
         Arme bat1 = new bâton ("Chêne", 4, 5);
         Arme bat2 = new bâton ("Charme", 5, 6);
         
-        System.out.println(Epee1.connaitreNivAttaque());
+        Vector tabArmes = new Vector();
+        tabArmes.add(Epee1);
+        tabArmes.add(Epee2);
+        tabArmes.add(bat1);
+        tabArmes.add(bat2);
+        for (int i =0; i < tabArmes.size(); i++ ){
+            System.out.println(tabArmes.elementAt(i));
+        }
         
     }
     
