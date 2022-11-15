@@ -9,8 +9,10 @@ package tp3_moore;
  * @author Administrateur
  */
 public class Epee extends Arme{
-    public Epee(String unNom, int nivAttaque) {
-        nom = unNom;
-        niveauAttaque = nivAttaque ;
+    int finesse;
+    public Epee(String nom, int niveauAttaque, int finesse) {
+        this.nom = nom;
+        this.finesse = finesse;
+        this.niveauAttaque = niveauAttaque;
     }
 }

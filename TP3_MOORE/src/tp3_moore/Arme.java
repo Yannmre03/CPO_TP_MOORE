@@ -12,7 +12,13 @@ public abstract class Arme {
     String nom;
     int niveauAttaque;
     
+    public int connaitreNivAttaque() {
+        return niveauAttaque;
+    }
     
+    public String connaitreNom() {
+        return nom;
+    }
             
             
     @Override

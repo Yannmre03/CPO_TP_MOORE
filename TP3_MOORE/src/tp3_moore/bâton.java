@@ -9,8 +9,10 @@ package tp3_moore;
  * @author Administrateur
  */
 public class bâton extends Arme {
-    public bâton(String unNom, int nivAttaque) {
-        nom = unNom;
-        niveauAttaque = nivAttaque ;
+    int âge;
+    public bâton(String nom, int niveauAttaque, int âge) {
+        this.nom = nom;
+        this.âge = âge;
+        this.niveauAttaque = niveauAttaque;
     }
 }

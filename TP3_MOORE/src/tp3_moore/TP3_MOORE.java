@@ -15,8 +15,13 @@ public class TP3_MOORE {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        bâton bat = new bâton ("bat", 20);
-        System.out.println(bat);
+        Arme Epee1 = new Epee ("Excalibur",7,5);
+        Arme Epee2 = new Epee ("Durandal",4,7);
+        Arme bat1 = new bâton ("Chêne", 4, 5);
+        Arme bat2 = new bâton ("Charme", 5, 6);
+        
+        System.out.println(Epee1.connaitreNivAttaque());
+        
     }
     
 }
