@@ -10,8 +10,8 @@ package Armes;
  */
 public class Epee extends Arme{
     int finesse;
-    public Epee(String nom, int niveauAttaque, int finesse) {
-        this.nom = nom;
+    public Epee(String name, int niveauAttaque, int finesse) {
+        this.name = name;
         this.finesse = finesse;
         this.niveauAttaque = niveauAttaque;
     }

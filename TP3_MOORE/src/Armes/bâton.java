@@ -11,8 +11,8 @@ package Armes;
 public class bâton extends Arme {
     int âge;
     
-    public bâton(String nom, int niveauAttaque, int âge) {
-        this.nom = nom;
+    public bâton(String name, int niveauAttaque, int âge) {
+        this.name = name;
         this.niveauAttaque = niveauAttaque;
         this.âge = âge;
         

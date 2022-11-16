@@ -9,7 +9,7 @@ package Armes;
  * @author Administrateur
  */
 public abstract class Arme {
-    String nom;
+    String name;
     int niveauAttaque;
     
     public int connaitreNivAttaque() {
@@ -17,13 +17,13 @@ public abstract class Arme {
     }
     
     public String connaitreNom() {
-        return nom;
+        return name;
     }
             
             
     @Override
     public String toString () {                             // méthode string 
-        return "nom de l'arme: " + nom + ", Niveau d'attaque: " + niveauAttaque;
+        return "nom de l'arme: " + name + ", Niveau d'attaque: " + niveauAttaque;
     }
     
 }
